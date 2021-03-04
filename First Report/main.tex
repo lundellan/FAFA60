@@ -1,14 +1,103 @@
-\documentclass{article}
-\usepackage[utf8]{inputenc}
+% this template is adapted for PDF LaTeX
+\documentclass[conference]{IEEEtran}
 
-\title{Tillämpad optik}
-\author{lundelljacob }
-\date{February 2020}
+\usepackage[pdftex]{graphicx}
+\usepackage[T1]{fontenc}
+
+% correct bad hyphenation here
+%\hyphenation{op-tical net-works semi-conduc-tor}
+
+\usepackage[swedish]{babel}
+\usepackage{url}
+
+\title{En bra titel ...}
+
+\author{\IEEEauthorblockN{Här står författarnas namn\\}
+\IEEEauthorblockA{Lunds Tekniska Högskola\\
+Lund, Sverige\\
+Email: \{a.aaa, b.bbb\}}
+\and
+\IEEEauthorblockN{Här står handledarens namn\\}
+\IEEEauthorblockA{Lunds Tekniska Högskola\\
+	Lund, Sverige\\}}
+
+%----------------------------------------------------------------
 
 \begin{document}
-
 \maketitle
 
-\section{Introduction}
+\begin{abstract}
+Här en kort sammanfattning av laborationen (Abstract) \end{abstract}
+
+%------------------------------------------------------------------------- 
+
+\section{Introduktion}
+Ämne för laborationen och avsikten med försöket.
+
+%-------------------------------------------------------------------------
+
+\section{Teori}
+Kort beskrivning av den teori som ligger bakom experimenten. För alla längre härledningar och resultat hänvisar Du till kursboken eller laborationshandledningen, men Du bör ändå lämna en kort beskrivning av teori och metodik, så att en läsare kan förstå sammanhanget från den aktuella rapporten. \textbf{Exempel:} Enligt \cite{Fraunhofer} uppstår Fraunhoferböjning...
+
+%-------------------------------------------------------------------------
+
+\section{Apparatur}
+Ange de viktigaste komponenterna som används i försöket. För mer komplicerade apparater bör Du ange tillverkarens namn och apparatens beteckning. \textbf{Exempel:} 0.3 m Czerny-Turner spektrometer med CCD kamera (SpectraPro-300i från Acton Research Corporation)
+
+%-------------------------------------------------------------------------
+
+\section{Utförande}
+Ange försöksgången. Kommentera de centrala momenten och speciellt känsliga/viktiga delar.
+
+\subsection{Underrubriker}
+Använd er av underrubriker (subsection) för att strukturera er rapport. 
+
+%-------------------------------------------------------------------------
+
+\section{Resultat}
+Ange mätdata från försöket i tabellform och som diagram/figurer. Varje figur ska ha en figurtext som talar om vad som visas och axlarna ska ha storhetsbeteckningar och enheter. I huvudtexten måste ni referera till varje bild ni lägger till, t.ex., "...som man ser i \ref{exempel}..."
+
+\begin{figure}[h]
+    \begin{center}
+        \resizebox{!}{30mm}{\includegraphics{exempel.pdf}}
+    \end{center}
+    \caption{Figurexempel.}
+    \label{exempel}
+\end{figure}
+
+%-------------------------------------------------------------------------
+
+\section{Diskussion}
+Gör jämförelse mellan Ditt resultat och teori, tabeller eller andra experiment. Detta är den viktigaste delen i rapporten. Här ska Du visa att Du verkligen lärt Dig något av laborationen och knyta samman teori och experiment. Kommentera gärna också laborationen och kom med förslag till förbättringar/förändringar
+
+%-------------------------------------------------------------------------
+
+\section{Sammanfattning}
+Viktigaste slutsatserna och slutresultat med felgränser.
+
+%-------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+%Om man har referenserna i en databas, i det här fallet filen references.bib
+%\bibliographystyle{plain}
+%\bibliography{../../references} 
+
+%Alternativt om man skriver referenserna direkt här i filen
+
+\begin{thebibliography}{77}
+	
+\bibitem{Fraunhofer}G. Jönsson: \emph{Våglära och Optik}, 5:e upplagan, Lund Sverige: Teach Support
+
+
+\end{thebibliography}
 
 \end{document}
